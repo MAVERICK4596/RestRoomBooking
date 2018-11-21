@@ -24,7 +24,7 @@ def Find_the_next(source_list):
                 
     print(source_list)
     
-Find_the_next([1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1])
+
 
 
 
