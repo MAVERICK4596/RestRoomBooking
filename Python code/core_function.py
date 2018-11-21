@@ -9,8 +9,10 @@ def Find_the_next(source_list):
 
     if(len(occupied_list)==0):       
        source_list[0]=1
+       return 0
     elif(len(occupied_list)==1):
         source_list[len(source_list)-1]=1
+        return len(source_list)-1
     else:
         for j in range(0, len(occupied_list)-1):
             difference = abs(occupied_list[j]-occupied_list[j+1])
@@ -21,8 +23,8 @@ def Find_the_next(source_list):
             difference = abs(occupied_list[k]-occupied_list[k+1])
             if(difference == max_difference):
                 source_list[(occupied_list[k]+(difference//2))]=1
-                
-    print(source_list)
+                return (occupied_list[k]+(difference//2))
+    
     
 
 
