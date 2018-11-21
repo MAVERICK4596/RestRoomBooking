@@ -1,3 +1,4 @@
+import json
 def Find_the_next(source_list):
     occupied_list = []
     difference_list = []
@@ -25,7 +26,22 @@ def Find_the_next(source_list):
                 source_list[(occupied_list[k]+(difference//2))]=1
                 return (occupied_list[k]+(difference//2))
     
-    
+def check_the_emp(empnum):
+    with open("./data.json", "r") as fp:
+        data = json.loads(fp.read())
+
+    emp_dict = data["employee"]
+    emp_list=[]
+    for i in emp_dict.keys():
+        emp_list.append(i)
+
+    if(empnum in emp_list):
+        return True
+    else:
+        return False
+
+
+
 
 
 
