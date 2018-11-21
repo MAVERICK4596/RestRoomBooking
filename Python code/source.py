@@ -2,7 +2,7 @@ from core_function import Find_the_next
 import json 
 print("Welcome to RestoBook Service ")
 print("Please enter your emloyee number as '1 employeenumber' if you are booking and '0 employee number if you are leaving :-) ")
-print(" ")
+print("  ")
 
 with open("./data.json", "r") as fp:
     data = json.loads(fp.read())
