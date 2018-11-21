@@ -1,4 +1,4 @@
-def mohitifier(source_list):
+def Find_the_next(source_list):
     occupied_list = []
     difference_list = []
     max_difference = 0
@@ -12,7 +12,7 @@ def mohitifier(source_list):
     elif(len(occupied_list)==1):
         source_list[len(source_list)-1]=1
     else:
-        for j in range(0, len(occupied_list)-1):
+        for j in range(0, len(occupied_list)-1):Find_the_empty
             difference = abs(occupied_list[j]-occupied_list[j+1])
             difference_list.append(difference)
         
@@ -24,7 +24,7 @@ def mohitifier(source_list):
                 
     print(source_list)
     
-mohitifier([1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1])
+Find_the_next([1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1])
 
 
 
