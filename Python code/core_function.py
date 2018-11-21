@@ -12,7 +12,7 @@ def Find_the_next(source_list):
     elif(len(occupied_list)==1):
         source_list[len(source_list)-1]=1
     else:
-        for j in range(0, len(occupied_list)-1):Find_the_empty
+        for j in range(0, len(occupied_list)-1):
             difference = abs(occupied_list[j]-occupied_list[j+1])
             difference_list.append(difference)
         
